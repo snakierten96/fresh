@@ -8,7 +8,7 @@ import { INavItem, NAVITEMS } from './app-navigation';
   styleUrls: ['./app.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class AppComponent {
+export class AppComponent implements OnInit, OnDestroy {
   title: string = 'app works!';
   navItems: INavItem[] = NAVITEMS;
 

@@ -1,3 +1,4 @@
-<p>
-  category works!
-</p>
+<div class="flex-container" fxLayout="row" fxLayoutWrap fxLayoutAlign="space-around start">
+  <app-category-item [item]="item" *ngFor="let item of items" fxFlex="25">
+  </app-category-item>
+</div>
