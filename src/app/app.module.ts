@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { HomeModule } from './home';
+import { CategoryModule } from './category';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { HomeModule } from './home';
     FlexLayoutModule.forRoot(),
     AppRoutingModule,
     HomeModule,
+    CategoryModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
