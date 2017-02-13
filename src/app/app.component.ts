@@ -1,10 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation, OnInit, OnDestroy } from '@angular/core';
+
+import { INavItem, NAVITEMS } from './app-navigation';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
-  title = 'app works!';
+  title: string = 'app works!';
+  navItems: INavItem[] = NAVITEMS;
+
+  constructor() {}
+
+  ngOnInit(): void {
+
+  }
+
+  ngOnDestroy(): void {
+    
+  }
+
 }
