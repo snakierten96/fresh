@@ -5,7 +5,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { CategoryRoutingModule } from './category-routing.module';
 import { CategoryComponent } from './category.component';
-import { CategoryItemComponent } from './category-item/category-item.component';
+import { CategoryItemComponent } from './category-item';
+import { CategoryDataService, CategoryResolveService } from './services';
 
 @NgModule({
   declarations: [
@@ -18,5 +19,9 @@ import { CategoryItemComponent } from './category-item/category-item.component';
     FlexLayoutModule,
     CategoryRoutingModule,
   ],
+  providers: [
+    CategoryDataService,
+    CategoryResolveService,
+  ]
 })
 export class CategoryModule { }
